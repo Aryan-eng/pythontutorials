@@ -1,3 +1,4 @@
+import numpy as np
 class player:
     raise_amount = 1.1
     contract_years = 2
@@ -22,10 +23,10 @@ class player:
         cls.raise_amt = amount
 
 class defender(player):
-    pass
+    contract_years = 5
 
 class offender(player):
-    pass
+    contract_years = 1.5
 
-spurs_striker = offender("Harry", "Kane", 25000000, "Tottenham Spurs")
-
+spurs_striker = player("Harry", "Kane", 25000000, "Tottenham Spurs")
+print(help(defender))
