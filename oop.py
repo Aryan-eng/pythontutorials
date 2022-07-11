@@ -1,6 +1,7 @@
 class player:
     raise_amount = 1.1
     contract_years = 2
+    
     def __init__(self, first, last, pay, team):
         self.first = first
         self.last = last
@@ -20,5 +21,11 @@ class player:
     def set_raise_amt(cls, amount):
         cls.raise_amt = amount
 
+class defender(player):
+    pass
 
-    spurs_striker = player("Harry", "Kane", 25000000, "Tottenham Spurs")
+class offender(player):
+    pass
+
+spurs_striker = offender("Harry", "Kane", 25000000, "Tottenham Spurs")
+
