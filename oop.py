@@ -1,4 +1,3 @@
-import numpy as np
 class player:
     raise_amount = 1.1
     contract_years = 2
