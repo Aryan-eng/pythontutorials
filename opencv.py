@@ -1,4 +1,5 @@
 import cv2 as cv
-img = cv.imread('photos/IMG_0880.jpeg')
-cv.imshow("Aryan", img)
+from matplotlib import pyplot as plt
+img = cv.imread('photos/aryan.jpeg')
+plt.imshow("Aryan", img)
 cv.waitKey(0)
